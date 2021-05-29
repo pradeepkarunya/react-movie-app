@@ -15,9 +15,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "lint": "eslint --fix --ext .js,.jsx ./src/",
+    "prettier:check": "check-prettier",
+    "prettier:write": "prettier --write --fix 'src/**/*.{js,jsx,json}'",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "checkFiles":[
+    "src/**/*.js",
+    "src/**/*.jsx",
+    "src/**/*.json"
+  ],
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -37,12 +44,14 @@
     ]
   },
   "devDependencies": {
+    "check-prettier": "^1.0.3",
     "eslint": "^7.27.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.23.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.23.2",
-    "eslint-plugin-standard": "^5.0.0"
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "^2.3.0"
   }
 }
