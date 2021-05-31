@@ -134,38 +134,28 @@ jobs:
                 },
                 {
                   "type": "section",
-                  "text": {
-                    "type": "mrkdwn",
-                    "text": "*Project*: \n$CIRCLE_PROJECT_REPONAME"
-                  }
-                },
-                {
-                  "type": "section",
-                  "text": {
-                    "type": "mrkdwn",
-                    "text": "*Branch*: \n$CIRCLE_BRANCH"
-                  }
-                },
-                {
-                  "type": "section",
-                  "text": {
-                    "type": "mrkdwn",
-                    "text": "*When*: \n$(date+'%m/%d/%Y %T')"
-                  }
-                },
-                {
-                  "type": "section",
-                  "text": {
-                    "type": "mrkdwn",
-                    "text": "*Build*: \n$CIRCLE_BUILD_NUM"
-                  }
-                },
-                {
-                  "type": "section",
-                  "text": {
-                    "type": "mrkdwn",
-                    "text": "*Author*: \n$CIRCLE_PROJECT_USERNAME"
-                  }
+                  "fields":[
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Project*: \n$CIRCLE_PROJECT_REPONAME"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Branch*: \n$CIRCLE_BRANCH"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*When*: \n$(date+'%m/%d/%Y %T')"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Build*: \n$CIRCLE_BUILD_NUM"
+                    },
+                    {
+                      "type": "mrkdwn",
+                      "text": "*Author*: \n$CIRCLE_PROJECT_USERNAME"
+                    }
+                  ]
                 },
                 {
                   type: "actions",
