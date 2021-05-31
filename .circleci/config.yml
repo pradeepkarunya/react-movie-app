@@ -133,35 +133,35 @@ jobs:
                   }
                 },
                 {
-                  "type": "section"
+                  "type": "section",
                   "text": {
                     "type": "mrkdwn",
                     "text": "*Project*: \n$CIRCLE_PROJECT_REPONAME"
                   }
                 },
                 {
-                  "type": "section"
+                  "type": "section",
                   "text": {
                     "type": "mrkdwn",
                     "text": "*Branch*: \n$CIRCLE_BRANCH"
                   }
                 },
                 {
-                  "type": "section"
+                  "type": "section",
                   "text": {
                     "type": "mrkdwn",
                     "text": "*When*: \n$(date+'%m/%d/%Y %T')"
                   }
                 },
                 {
-                  "type": "section"
+                  "type": "section",
                   "text": {
                     "type": "mrkdwn",
                     "text": "*Build*: \n$CIRCLE_BUILD_NUM"
                   }
                 },
                 {
-                  "type": "section"
+                  "type": "section",
                   "text": {
                     "type": "mrkdwn",
                     "text": "*Author*: \n$CIRCLE_PROJECT_USERNAME"
