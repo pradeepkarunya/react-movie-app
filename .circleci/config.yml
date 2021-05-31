@@ -120,7 +120,7 @@ jobs:
       - slack/notify:
           event: 'always'
           channel: 'react-cinema-app'
-          templates: ''
+          template: ''
           custom: |
             {
               "blocks": [
