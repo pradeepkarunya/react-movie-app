@@ -117,7 +117,7 @@ jobs:
     executor: slack-executor
     steps:
       - run: echo "Slack Notification"
-      - slack-notify:
+      - slack/notify:
           event: 'always'
           channel: 'react-cinema-app'
           templates: ''
