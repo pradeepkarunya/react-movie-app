@@ -184,18 +184,9 @@ workflows:
                 - develop
                 - staging
                 - main
-      - test:
-          requires:
-            - linting
-          filters:
-            branches:
-              only:
-                - develop
-                - staging
-                - main
       - deploy-to-aws-s3:
           requires:
-            - test
+            - linting
           filters:
             branches:
               only:
